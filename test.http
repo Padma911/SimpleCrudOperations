@@ -1,0 +1,35 @@
+# ### INSERTING DATA 
+# POST http://localhost:3000/insertData
+
+### GET BLOGS DATA 
+GET http://localhost:3000/blogs
+
+### CREATE BLOG 
+
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+{   "id":"901",
+    "title":"Node",
+    "imageUrl":"image_node_link",
+    "avatarUrl":"avatar_node_link",
+    "author":"node_author",
+    "topic":"node_topic"
+}
+
+
+### UPDATE BLOG 
+PUT http://localhost:3000/blogs/901
+Content-Type: application/json
+
+{   
+    "title":"NodeJs",
+    "imageUrl":"image_node_link",
+    "avatarUrl":"avatar_node_link",
+    "author":"node_author",
+    "topic":"node_topic"
+}
+
+### DELETE BLOG 
+DELETE  http://localhost:3000/blogs/901 
+###
